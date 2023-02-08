@@ -4,6 +4,7 @@ USER root
 WORKDIR /WORKSPACE
 RUN apt-get update && apt-get install -y \
     build-essential \
+    cmake \
     wget
 
 COPY install.sh .
