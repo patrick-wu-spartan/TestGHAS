@@ -8,7 +8,9 @@ int main() {
     // unused variable
     int myUnusedVar;
 
-    int notAFloat = 5.1;
+    // narrow conversion
+    double myDouble = 5.1;
+    float notADouble = myDouble;
 
     // out of range indexing
     int arr[4];

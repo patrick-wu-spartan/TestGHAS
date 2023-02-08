@@ -4,6 +4,7 @@ message("Project Build Architecture/Processor: ${CMAKE_SYSTEM_PROCESSOR}")
 # C++ Standard
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fopenmp -Wall -Wextra")
 message("Using C++ Standard: ${CMAKE_CXX_STANDARD}")
 
 #include(dependencies/gtest.cmake)
